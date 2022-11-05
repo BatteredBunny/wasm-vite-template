@@ -1,6 +1,6 @@
 [package]
 name = "wasm-pack-vite-template"
-description = "An opinionated template for using wasm-pack with vite"
+description = "{{description}}"
 version = "0.1.0"
 edition = "2021"
 repository = "https://github.com/ayes-web/wasm-pack-vite-template"
