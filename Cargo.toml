@@ -1,0 +1,33 @@
+[package]
+name = "wasm-pack-vite-template"
+description = "An opinionated template for using wasm-pack with vite"
+version = "0.1.0"
+edition = "2021"
+repository = "https://github.com/ayes-web/wasm-pack-vite-template"
+
+[lib]
+crate-type = ["cdylib"]
+
+[features]
+default = ["console_error_panic_hook", "wee_alloc"]
+
+[profile.release]
+opt-level = "s" # Tell `rustc` to optimize for small code size.
+lto = true
+
+[dependencies]
+gloo = "0.8.0"
+wasm-bindgen = "0.2.83"
+web-sys = "0.3.60"
+js-sys = "0.3.60"
+
+# The `console_error_panic_hook` crate provides better debugging of panics by
+# logging them with `console.error`. This is great for development, but requires
+# all the `std::fmt` and `std::panicking` infrastructure, so isn't great for
+# code size when deploying.
+console_error_panic_hook = { version = "0.1.6", optional = true }
+
+# `wee_alloc` is a tiny allocator for wasm that is only ~1K in code size
+# compared to the default allocator's ~10K. It is slower than the default
+# allocator, however.
+wee_alloc = { version = "0.4.5", optional = true }

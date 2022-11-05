@@ -1,0 +1,12 @@
+html,body {
+    font-family: sans-serif
+}
+
+.text-center {
+    text-align: center;
+}
+
+#greeting-button-wrapper {
+    display: flex;
+    justify-content: center;
+}
