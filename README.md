@@ -2,6 +2,9 @@
 
 <p align="center">An opinionated template for using wasm-pack with vite</p>
 
+```
+cargo generate --git https://github.com/ayes-web/wasm-pack-vite-template
+```
 
 ## Usage
 
