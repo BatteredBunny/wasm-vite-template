@@ -1,2 +1,2 @@
-import * as wasm from "wasm-pack-vite-template";
+import * as wasm from "../pkg/wasm_pack_vite_template";
 wasm.run();

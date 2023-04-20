@@ -1,12 +1,24 @@
-<h1 align="center">wasm-pack-vite-template</h1>
+<h1 align="center">wasm-vite-template</h1>
 
-<p align="center">An opinionated template for using wasm-pack with vite</p>
+<p align="center">An opinionated template for using rust wasm with vite</p>
 
 ```
-cargo generate --git https://github.com/ayes-web/wasm-pack-vite-template
+cargo generate --git https://github.com/ayes-web/wasm-vite-template
 ```
 
-## Usage
+## Nix
+
+### Build
+```
+nix build
+```
+
+### Shell
+```
+nix develop
+```
+
+## Makefile usage
 
 ### Build
 
