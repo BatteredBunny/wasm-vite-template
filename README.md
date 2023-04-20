@@ -8,6 +8,10 @@ cargo generate --git https://github.com/ayes-web/wasm-vite-template
 
 ## Nix
 
+```
+git add *.nix
+```
+
 ### Build
 ```
 nix build

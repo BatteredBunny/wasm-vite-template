@@ -1,7 +1,7 @@
 {
-  "name": "wasm-pack-vite-template-npm",
+  "name": "{{project-name}}-npm",
   "version": "1.0.0",
-  "description": "An opinionated template for using wasm-pack with vite",
+  "description": "{{description}}",
   "main": "index.html",
   "scripts": {
     "start": "vite",

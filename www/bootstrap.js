@@ -1,2 +1,2 @@
-import * as wasm from "../pkg/wasm_pack_vite_template";
+import * as wasm from "../pkg/{{crate_name}}";
 wasm.run();

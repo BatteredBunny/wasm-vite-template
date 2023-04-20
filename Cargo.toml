@@ -1,9 +1,8 @@
 [package]
-name = "wasm-pack-vite-template"
+name = "{{crate_name}}"
 description = "{{description}}"
 version = "0.1.0"
 edition = "2021"
-repository = "https://github.com/ayes-web/wasm-pack-vite-template"
 
 [lib]
 crate-type = ["cdylib"]

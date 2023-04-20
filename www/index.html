@@ -2,30 +2,26 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <title>wasm-vite-template</title>
+  <meta charset="utf-8">
+  <title>{{project-name}}</title>
 
-    <link rel="stylesheet" href="./style.css">
-    <meta content="width=device-width, initial-scale=1" name="viewport">
-    <meta name="description" content="An opinionated template for using rust wasm with vite">
+  <link rel="stylesheet" href="./style.css">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <meta name="description" content="{{description}}">
 
-    <script type="module" src="./bootstrap.js"></script>
+  <script type="module" src="./bootstrap.js"></script>
 </head>
 
 <body>
-    <noscript>
-        <p class="text-center">This page contains webassembly and javascript content, please enable javascript in your
-            browser.</p>
-    </noscript>
+  <noscript>
+    <p class="text-center">This page contains webassembly and javascript content, please enable javascript in your
+      browser.</p>
+  </noscript>
 
-    <h1 class="text-center">Hello from wasm-vite-template!</h1>
-    <div id="greeting-button-wrapper">
-        <button id="greeting-button">Greet</button>
-    </div>
-
-    <div class="text-center">
-        <a href="https://github.com/ayes-web/wasm-vite-template">Source code</a>
-    </div>
+  <h1 class="text-center">Hello from {{project-name}}!</h1>
+  <div id="greeting-button-wrapper">
+    <button id="greeting-button">Greet</button>
+  </div>
 </body>
 
 </html>

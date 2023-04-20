@@ -1,6 +1,6 @@
 build:
 	cargo build --target wasm32-unknown-unknown --release
-	wasm-bindgen target/wasm32-unknown-unknown/release/wasm_pack_vite_template.wasm --out-dir=pkg
+	wasm-bindgen target/wasm32-unknown-unknown/release/{{crate_name}}.wasm --out-dir=pkg
 	cd www && yarn install && yarn build
 
 start: build
