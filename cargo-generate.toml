@@ -1,5 +1,4 @@
-[template]
-cargo_generate_version = "0.13.0"
-
-[placeholders]
-description = { type="string", prompt="Description for the crate?" }
+[placeholders.description]
+type = "string"
+prompt = "Description for the project"
+default = "An opinionated template for using rust wasm with vite"

@@ -12,8 +12,7 @@
     };
 
     wasm-build = rustPlatformWasm.buildRustPackage rec {
-          name = "wasm-pack-vite-template";
-          undercaseName = "wasm_pack_vite_template";
+          name = "{{project-name}}";
           cargoLock.lockFile = ./Cargo.lock;
 
           src = ./.;
@@ -30,7 +29,7 @@
 
           buildPhase = ''
             cargo build --target ${targetName} --release
-            wasm-bindgen target/${targetName}/release/${undercaseName}.wasm --out-dir=$out/pkg
+            wasm-bindgen target/${targetName}/release/{{crate_name}}.wasm --out-dir=$out/pkg
           '';
 
           installPhase = "echo 'Skipping installPhase'";
