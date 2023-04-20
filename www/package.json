@@ -8,12 +8,9 @@
     "build": "vite build",
     "preview": "vite preview"
   },
-  "dependencies": {
-    "wasm-pack-vite-template": "link:../pkg"
-  },
   "devDependencies": {
-    "vite": "^3.2.2",
-    "vite-plugin-top-level-await": "^1.2.1",
-    "vite-plugin-wasm": "^3.1.0"
+    "vite": "^3.2.5",
+    "vite-plugin-top-level-await": "^1.3.0",
+    "vite-plugin-wasm": "^3.2.2"
   }
 }
