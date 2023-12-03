@@ -15,10 +15,10 @@ opt-level = "s" # Tell `rustc` to optimize for small code size.
 lto = true
 
 [dependencies]
-gloo = "0.8.0"
-wasm-bindgen = "0.2.84"
-web-sys = "0.3.61"
-js-sys = "0.3.61"
+gloo = "0.10.0"
+wasm-bindgen = "0.2.89"
+web-sys = "0.3.66"
+js-sys = "0.3.66"
 
 # The `console_error_panic_hook` crate provides better debugging of panics by
 # logging them with `console.error`. This is great for development, but requires
