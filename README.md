@@ -3,7 +3,7 @@
 <p align="center">An opinionated template for using rust wasm with vite</p>
 
 ```
-cargo generate --git https://github.com/ayes-web/wasm-vite-template
+cargo generate --git https://github.com/BatteredBunny/wasm-vite-template
 ```
 
 ## Nix
