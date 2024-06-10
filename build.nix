@@ -3,6 +3,7 @@
   makeRustPlatform,
   mkYarnPackage,
   fetchYarnDeps,
+  lib,
 }: let
   targetName = "wasm32-unknown-unknown";
 
@@ -45,7 +46,7 @@ in
 
     offlineCache = fetchYarnDeps {
       yarnLock = src + "/yarn.lock";
-      hash = "sha256-bH9UGOH5JYavwSiZr5UcQX46hqYmZ29A6JWGLPm60PU=";
+      hash = lib.fakeHash;
     };
 
     buildPhase = ''
