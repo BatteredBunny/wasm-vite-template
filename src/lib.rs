@@ -1,6 +1,6 @@
 mod utils;
 
-use gloo::{console::log, events::EventListener, dialogs::alert};
+use gloo::{console::log, dialogs::alert, events::EventListener};
 use wasm_bindgen::prelude::*;
 
 // When the `wee_alloc` feature is enabled, use `wee_alloc` as the global
@@ -20,5 +20,6 @@ pub fn run() {
 
     EventListener::new(&greeting_button, "click", move |_| {
         alert("Greetings from rust wasm!");
-    }).forget();
+    })
+    .forget();
 }
