@@ -1,13 +1,11 @@
 {
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
-    rust-overlay.url = "github:oxalica/rust-overlay";
   };
 
   outputs =
     { self
     , nixpkgs
-    , rust-overlay
     , ...
     }:
     let
@@ -19,10 +17,6 @@
 
       nixpkgsFor = forAllSystems (system: import nixpkgs {
         inherit system;
-
-        overlays = [
-          rust-overlay.overlays.default
-        ];
       });
     in
     {
@@ -43,20 +37,18 @@
       devShells = forAllSystems (system:
         let
           pkgs = nixpkgsFor.${system};
-
-          wasm-rust = pkgs.rust-bin.stable.latest.default.override {
-            extensions = [ "rust-src" ];
-            targets = [ "wasm32-unknown-unknown" ];
-          };
         in
         {
           default = pkgs.mkShell {
             buildInputs = with pkgs; [
+              cargo
+              rustc
+              llvmPackages.lld
+
               openssl
               pkg-config
               gnumake
-              wasm-rust
-              yarn
+              pnpm_10
               wasm-bindgen-cli
             ];
           };
