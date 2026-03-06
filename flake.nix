@@ -47,7 +47,7 @@
 
               openssl
               pkg-config
-              gnumake
+              just
               pnpm_10
               wasm-bindgen-cli
             ];

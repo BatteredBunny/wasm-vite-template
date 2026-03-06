@@ -22,22 +22,22 @@ nix build
 nix develop
 ```
 
-## Makefile usage
+## Justfile usage
 
 ### Build
 
 ```
-make
+just
 ```
 
 ### Start dev server
 
 ```
-make dev
+just dev
 ```
 
 ### Preview production build
 
 ```
-make start
+just start
 ```
